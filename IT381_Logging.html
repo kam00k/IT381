@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Engagement: Honeypots and Related Items</h1>
+<h2>Jack Wilson, 2080838</h2>
+
+<h1>Question 1: Where are the logs/What automated action would you take?</h1>
+
+<p>I would probably be running an Apache or Nginx server that can take care of the access logs. The logs would be stored on a different server altogether if need be. </p>
+<p>Certain IP ranges would be blocked by default (especially ones commonly used by VPNs), and hits on the honeypot would block the ip address of an attacker for a period of time.</p>
+<p>Just for grins, I would also set things up so that after a certain number of hits on the honeypot (i.e. by different ip addresses), the server would disconnect from the internet.</p>
+
+<h1>Question 2: Downsides</h1>
+
+<p>The most obvious downside to this method is that a small number of attacks would take the server offline, making it inaccessible to anyone who uses it regularly. '\n' It also means that if attackers are persistent enough, I don't sleep. I imagine beyond a certain point, however, I wouldn't sleep anyway. </p>
+</body>
+</html>
+
